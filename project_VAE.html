@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="VAE for MNIST.">
+    <meta name="author" content="Amr">
+    <title>VAE for MNIST</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="academicons/css/academicons.min.css">
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Variational Autoencoder</span> on the MNIST Dataset</h2>
+            <div class="row">
+                <div class="blog-card">
+				
+                    
+					
+                    <div class="content-holder">   
+						<figure>
+							<img src="assets/images/latent_space.jpg" alt="" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>I plot digit characterizations in the autoencoder's latent space illustrating that the trained model is able to group (cluster) MNIST images according to their class (label) In the image below, each digit image corresponds to one point. Digits of the same class have the same color.</small></figcaption>
+						</figure>					
+
+                        <p class="post-details">
+                            <a href="https://amrmsab.github.io/">By: Amr M. Saber</a>
+                        </p>
+                        
+						<p style="color:#000;">
+						<b>Expertise:</b> Probabilistic learning, variational autoencoders with Bayes, deep learning.
+						</p>
+						
+						<p style="color:#000;">
+						<b>Skills:</b> Julia, Flux, Zygote, MNIST dataset.
+						</p>
+						
+                        <p style="color:#000;">
+						This project reproduces and extends the results of Kingma and Welling (2013) implementing a Variational Autoencoder (Auto-Encoding Variational Bayes) to reconstruct MNIST digits. The MNIST dataset contains images of digits from 0 to 9.
+						</p>
+						
+						<p style="color:#000;">
+						Th code for this project is hosted on GitHub at <a href="https://github.com/amrmsab/variational_autoencoder_MNIST">github.com/amrmsab/variational_autoencoder_MNIST</a>.
+						</p>
+						
+						
+												
+						<p style="color:#000;">
+						<b>Benefit 1:</b> Autoencoders can represent the figures in a reduced latent space that allows us to visualize the distinction between the digits' images. 
+						</p>
+						
+						
+						<p style="color:#000;">
+						<b>Benefit 2:</b> Autoencoders can help us generate more digit images. 
+						</p>
+
+						<figure>
+							<img src="assets/images/0to5.jpg" alt="" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>I use this latent space representation to see what `interpolating’ between numbers looks like. For example, we generate numbers between 0 and 5.</small></figcaption>
+						</figure>	
+						
+                        <p style="color:#000;">
+						<b>Benefit 3:</b> Autoencoders can help us reconstruct incomplete images. 
+						</p>
+						
+						<figure>
+							<img src="assets/images/reconstruction.jpg" alt="" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>I reconstruct a digit image given only its top half. Below is the whole image of which we give only the top half to the model. The model then reconstructs the bottom half..</small></figcaption>
+						</figure>
+					
+					
+                    </div>
+
+                </div><!-- end of blog wrapper -->
+            </div>
+        </div>
+    </section>
+
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>

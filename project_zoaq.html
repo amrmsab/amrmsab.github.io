@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="RL for Attacker Modelling.">
+    <meta name="author" content="Amr">
+    <title>RL for Attacker Modelling</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="academicons/css/academicons.min.css">
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Deep Reinforcement Learning</span> for Cyber Threat Modelling</h2>
+            <div class="row">
+                <div class="blog-card">
+				
+                    
+					
+                    <div class="content-holder">   
+						<figure>
+							<img src="assets/images/Website_IP-threat_ICS.jpg" alt="Threat" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>Cyberattacks incidents against critical infrastructure, including (from top clockwise) hospitals, communication infrastructure, energy systems, transportation sector, and water systems, have been steadily on the rise.</small></figcaption>
+						</figure>					
+
+                        <p class="post-details">
+                            <a href="https://amrmsab.github.io/">By: Amr M. Saber</a>
+                        </p>
+                        
+						<p>
+						<b>Skills:</b> Reinforcement learning (RL), deep learning, Neural network design and implementation, ICS security,
+						Systems control.
+						</p>
+						
+                        <p>
+						This project is the subject of the IEEE journal transaction:
+						</p>
+						
+						<p>
+						<i>A. S. Mohamed and D. Kundur, "On the Use of Reinforcement Learning for Attacking and 
+						Defending Load Frequency Control," in IEEE Transactions on Smart Grid</i>
+						</p>
+						
+						<p>
+						<b>Problem:</b> Recent cyber incidents have raised alarming concerns about the threat of cyberattacks targeting our critical infrastructure, including hospitals, electricity grids, gas pipelines, and communication networks providing telecom and internet services. These attacks pose significant risks to society. Notable examples include a cyberattack on Ukraine's electric grid in 2015, which resulted in a blackout affecting 250,000 people; a cyberattack on an Iranian nuclear enrichment facility reported to have damaged one-fifth of the facility's centrifuges; and the discovery of the Triton malware at a Saudi Arabian petrochemical plant, capable of disabling safety instrumented systems and causing a plant disaster.
+						</p>
+
+						<p>
+						<b>Challenge:</b> The primary challenge in countering these cyberattacks is the lack of awareness regarding their capabilities. We remain unaware of vulnerabilities, tactics employed by cyberattackers, and how these vulnerabilities can be exploited to harm our critical infrastructure.
+						</p>
+			
+						<p>
+						<b>Method:</b> We leverage Reinforcement Learning (RL) to create intelligent agents capable of simulating cyberattackers, providing proactive insights into potential vulnerabilities, resource sought for executing attacks, and potential tactics for exploiting vulnerabilites. 
+						Alarmingly, the actor network of a trained deep RL agent can be easily adapted into a malicious program capable of launching attacks against our systems.
+						</p>
+						
+						<p>
+						<b>Approach:</b> This research involved the development of an RL environment simulating the dynamics of an industrial control system within a critical infrastructure system, specifically an electric grid. Subsequently, I designed, trained, and fine-tuned a Deep Deterministic Policy Gradient (DDPG) RL agent with a deep neural network backbone. The formulation of reward functions and the RL agent's game aimed to encourage learning of a malicious policy, simulating potential attacker behaviors that could harm the critical system.
+						</p>
+
+						<p>
+						Refer to our journal paper for details regarding the implementation.
+						</p>
+                        
+						<figure>
+							<img src="assets/images/Website_IP-RL_policy.jpg" alt="Trulli" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>RL agents can produce models of cyberattackers, which we can use to learn about system vulnerabilities and cyberattacker tactics..</small></figcaption>
+						</figure>
+					
+					
+                    </div>
+
+                </div><!-- end of blog wrapper -->
+            </div>
+        </div>
+    </section>
+
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>

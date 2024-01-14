@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="RL for Attacker Modelling.">
+    <meta name="author" content="Amr">
+    <title>RL for Combined Attacks</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+	<link rel="stylesheet" href="academicons/css/academicons.min.css">
+	<link rel="stylesheet" href="assets/css/johndoe.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Deep Reinforcement Learning</span> for Combined Cyber Threats</h2>
+            <div class="row">
+                <div class="blog-card">
+				
+                    
+					
+                    <div class="content-holder">   
+						<figure>
+							<img src="assets/images/Website_IP-multipleThreats.jpg" alt="Threat" style="width:100%">
+							<figcaption style="text-align:center;font-style:italic;"><small>Cyberattacks are infiltrating systems through multiple access points and in many forms, including torjan horses, infected USB devices, spearphishing campaigns, and supply chain compromises.</small></figcaption>
+						</figure>					
+
+                        <p class="post-details">
+                            <a href="https://amrmsab.github.io/">By: Amr M. Saber</a>
+                        </p>
+                        
+						<p style="color:#000;">
+						<b>Expertise:</b> Reinforcement learning (RL), deep learning, Neural network design and implementation, ICS security, Systems control.
+						</p>
+						
+						<p style="color:#000;">
+						<b>Skills:</b> 
+						Python, PyTorch, StableBaselines, OpenAI Gym, Andes, Numpy, Matplotlib
+						</p>
+						
+                        <p style="color:#000;">
+						This research project is the subject of the paper below, presented at the 2023 International Conference on Machine Learning (ICMLA):
+						</p>
+						
+						<p style="color:#000;">
+						<i>A. S. Mohamed and D. Kundur, "Reinforcement Learning for Supply Chain Attacks Against Frequency and Voltage Control," in 22nd IEEE International Conference on Machine Learning and Applications (ICMLA) 2023</i>.
+						</p>
+						
+						<p style="color:#000;">
+						The paper's code is also available at <a href="https://paperswithcode.com/paper/reinforcement-learning-for-supply-chain">paperswithcode.com/paper/reinforcement-learning-for-supply-chain</a>.
+						</p>
+						
+						<p style="color:#000;">
+						This research is an extension of this <a href="project_rl.html">project</a>.
+						</p>
+						
+						<p style="color:#000;">
+						<b>Problem:</b> 
+						Cyberattacks can exploit various channels to target systems. Supply chain attacks, for instance, can infect devices before deployment, while spearphishing campaigns can use infected emails, Internet links, attachments, and more to introduce malware—such as trojan horses, rootkit software, and worms—to recipients' machines, subsequently propagating to other networked machines. The sophistication of these cyberattacks is evident as they patiently await opportune moments to cause system damage. Coordinated attacks, if activated simultaneously, can have a compounding detrimental effect on our systems, particularly in critical infrastructures such as transportation, water supply and treatment, energy, and medical systems.
+						</p>
+						
+						<p style="color:#000;">
+						In industrial control systems, upon which these critical systems rely, the consequences can be even severe.
+						</p>
+
+						<p style="color:#000;">
+						<b>Challenge:</b> 
+						The primary challenge lies in our inability to simulate how multiple attacks might synergize to harm our systems.
+						</p>
+			
+						<p style="color:#000;">
+						<b>Method:</b> 
+						I employ deep Reinforcement Learning (RL) to develop intelligent agents that simulate how various threats can collaborate to harm the grid and assess the impacts of combined attacks on amplifying each other. This method allows us to understand how distinct attackers leverage available information to coordinate their efforts and execute attacks synergistically.
+						</p>
+						
+						<p style="color:#000;">
+						<b>Approach:</b> 
+						The research involves creating an RL environment that simulates an industrial control system, specifically an electric grid, under attacks by multiple threat actors. The environment is implemented using OpenAI Gym in Python. We utilized Stable Baselines to train a Proximal Policy Optimization (PPO) RL agent with a neural backbone developed in PyTorch, and the electric grid model was constructed using Andes.
+						</p>
+
+						
+						<p style="color:#000;">
+						<b>Results:</b> 
+						In the paper, we illustrate how combined attacks can amplify each other, presenting a case study of electricity flicker escalating to a blackout as more threat actors participate.
+						</p>
+						
+						
+                    </div>
+
+                </div><!-- end of blog wrapper -->
+            </div>
+        </div>
+    </section>
+
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- JohnDoe js -->
+    <script src="assets/js/johndoe.js"></script>
+
+</body>
+</html>
